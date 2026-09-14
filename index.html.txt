@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourav Poddar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Sourav Poddar</h1>
+        <h2>Data Science Student | Analytics & Statistics</h2>
+        <p>I explore data, build statistical models, and create meaningful insights using R, Python, and modern analytical tools.</p>
+        <div class="buttons">
+            <a href="#projects">Projects</a>
+            <a href="https://github.com/Sourav2011" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/sourav-poddar-a7394410b/" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Data Science student at TU Dortmund with a strong interest in analytics, 
+            statistical modeling, and machine learning. I enjoy working with R and Python 
+            to analyze real-world datasets and build meaningful insights. My academic 
+            projects include ANOVA, Bayesian modeling, contingency table analysis, and 
+            descriptive analytics. I aim to grow as a data professional and contribute to 
+            impactful, data-driven solutions.
+        </p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+
+        <!-- ANOVA Ants Project -->
+        <div class="project-card">
+            <h3>ANOVA – Ants Picnic Project</h3>
+            <p>
+                Statistical analysis of ant attraction using one-way and two-way ANOVA. 
+                Includes assumption checks, Tukey HSD post-hoc tests, and interaction analysis.
+            </p>
+            <p><strong>Tech:</strong> R, ggplot2, dplyr</p>
+            <a href="https://github.com/Sourav2011/ANOVA-Ants-Picnic-Project" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Bayesian Ordinal Regression -->
+        <div class="project-card">
+            <h3>Bayesian Ordinal Regression – International Shipping</h3>
+            <p>
+                Bayesian statistical modeling to analyze how international shipping 
+                affects product ratings. Uses ordinal regression to quantify uncertainty 
+                in customer feedback.
+            </p>
+            <p><strong>Tech:</strong> R, Bayesian Modeling</p>
+            <a href="https://github.com/Sourav2011/Bayesian-Ordinal-Regression-International-Shipping" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Aspirin Contingency Tables -->
+        <div class="project-card">
+            <h3>Aspirin Effectiveness – Contingency Table Analysis</h3>
+            <p>
+                Statistical evaluation of aspirin’s effectiveness in preventing heart 
+                attacks using contingency tables. Includes risk ratio, odds ratio, 
+                chi-square tests, confidence intervals, and stratified analysis.
+            </p>
+            <p><strong>Tech:</strong> R, Epidemiological Statistics</p>
+            <a href="https://github.com/Sourav2011/Aspirin-Contingency-Tables-Project" target="_blank">GitHub</a>
+        </div>
+
+        <!-- World Happiness -->
+        <div class="project-card">
+            <h3>World Happiness Report – Descriptive Analysis</h3>
+            <p>
+                Descriptive statistical analysis of the World Happiness Report (2008–2018). 
+                Includes preprocessing, correlation analysis, Gini index computation, 
+                and country-level comparisons.
+            </p>
+            <p><strong>Tech:</strong> R, Data Visualization</p>
+            <a href="https://github.com/Sourav2011/Descriptive-Analysis-World-Happiness-" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Other Programming Projects -->
+        <div class="project-card">
+            <h3>Car Shipment Management System</h3>
+            <p>Java-based system to help showroom managers organize car shipments and assist customers.</p>
+            <p><strong>Tech:</strong> Java</p>
+            <a href="https://github.com/Sourav2011/Car-Shipment-Management-System" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Space Shooter Game</h3>
+            <p>C# game project focusing on graphics, movement, and gameplay mechanics.</p>
+            <p><strong>Tech:</strong> C#</p>
+            <a href="https://github.com/Sourav2011/Space_Shooter" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>C# Calculator</h3>
+            <p>Simple calculator application implementing basic arithmetic operations.</p>
+            <p><strong>Tech:</strong> C#</p>
+            <a href="https://github.com/Sourav2011/C-calculator" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Graphics Project (C++)</h3>
+            <p>Exploration of basic computer graphics concepts using C++.</p>
+            <p><strong>Tech:</strong> C++</p>
+            <a href="https://github.com/Sourav2011/Graphics_Project" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Learn C</h3>
+            <p>Collection of C programs and exercises created while learning the language.</p>
+            <p><strong>Tech:</strong> C</p>
+            <a href="https://github.com/Sourav2011/Learn_C" target="_blank">GitHub</a>
+        </div>
+
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>R (ANOVA, Bayesian Modeling, Epidemiology)</li>
+            <li>Python (learning)</li>
+            <li>Statistics & Data Analysis</li>
+            <li>C, C++, C#</li>
+            <li>Java</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>GitHub: <a href="https://github.com/Sourav2011" target="_blank">Sourav2011</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sourav-poddar-a7394410b/" target="_blank">sourav-poddar</a></p>
+    </section>
+
+</body>
+</html>

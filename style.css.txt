@@ -1,0 +1,75 @@
+/* GENERAL PAGE STYLE */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    color: #333;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.buttons a {
+    margin: 10px;
+    padding: 12px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* CONTENT SECTIONS */
+.about, .projects, .skills, .contact {
+    background: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+/* PROJECT CARDS */
+.project-card {
+    background: #fafafa;
+    padding: 20px;
+    border-left: 4px solid #ff6600;
+    margin-bottom: 20px;
+}
+
+/* SKILLS LIST */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #eee;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+}
+
+/* CONTACT SECTION */
+.contact a {
+    color: #ff6600;
+    text-decoration: none;
+}
