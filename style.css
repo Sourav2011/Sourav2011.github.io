@@ -4,6 +4,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #0a0f24;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 /* NAVBAR */
@@ -15,12 +16,19 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.navbar .logo {
+    color: #b8c6ff;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .navbar a {
@@ -46,6 +54,7 @@ body {
     align-items: center;
     max-width: 1100px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .hero-text {
@@ -54,16 +63,19 @@ body {
 
 .hero-text h1 {
     font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .hero-text h2 {
     font-size: 24px;
     color: #d0d4ff;
+    margin-bottom: 20px;
 }
 
 .hero-text p {
     font-size: 18px;
     color: #e3e6ff;
+    line-height: 1.6;
 }
 
 .buttons a {
@@ -74,6 +86,7 @@ body {
     border-radius: 8px;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 .buttons a:hover {
@@ -90,7 +103,45 @@ body {
     box-shadow: 0 0 25px #9b4dff;
 }
 
-/* PROJECTS */
+/* SECTION HEADERS */
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #b8c6ff;
+}
+
+/* EXPERIENCE TIMELINE */
+.timeline {
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline-item {
+    background: #141a3b;
+    padding: 20px;
+    border-left: 5px solid #9b4dff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(155, 77, 255, 0.4);
+}
+
+.timeline-item h3 {
+    margin: 0;
+    color: #fff;
+}
+
+.timeline-item h4 {
+    margin: 5px 0 15px;
+    color: #b8c6ff;
+}
+
+/* PROJECT GRID */
 .projects {
     padding: 60px 20px;
     max-width: 1100px;
@@ -116,10 +167,18 @@ body {
     box-shadow: 0 10px 25px rgba(155, 77, 255, 0.4);
 }
 
+.project-card a {
+    color: #9b4dff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* SKILLS */
 .skills ul {
     list-style: none;
     padding: 0;
+    max-width: 600px;
+    margin: auto;
 }
 
 .skills li {
@@ -132,6 +191,11 @@ body {
 
 .skills li:hover {
     background: #9b4dff;
+}
+
+/* EDUCATION */
+.education .timeline-item {
+    background: #141a3b;
 }
 
 /* CONTACT */
@@ -152,4 +216,53 @@ body {
     font-size: 20px;
     cursor: pointer;
     display: none;
+    color: white;
+    box-shadow: 0 0 15px rgba(155, 77, 255, 0.6);
+    transition: 0.3s;
+}
+
+#backToTop:hover {
+    background: #b86cff;
+}
+
+/* MODAL POPUP */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 15, 36, 0.85);
+}
+
+.modal-content {
+    background: #141a3b;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 60%;
+    border-left: 5px solid #9b4dff;
+    box-shadow: 0 0 25px rgba(155, 77, 255, 0.5);
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ANIMATED BACKGROUND */
+body {
+    background: linear-gradient(135deg, #0a0f24, #1a1f5c, #6a00ff);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }

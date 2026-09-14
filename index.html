@@ -11,11 +11,13 @@
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <h3 class="logo">Sourav</h3>
+        <h3 class="logo">Sourav Poddar</h3>
         <ul>
             <li><a href="#hero">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -26,10 +28,11 @@
             <div class="hero-text">
                 <h1>Sourav Poddar</h1>
                 <h2>Data Science Student | Analytics & Statistics</h2>
-                <p>I explore data, build statistical models, and create meaningful insights using R, Python, and modern analytical tools.</p>
+                <p>Motivated Data Science master's student with hands-on experience in data analysis, statistical modeling, system support, and operational processes. Skilled in Python, R, Power BI, SQL, and modern machine-learning techniques.</p>
 
                 <div class="buttons">
                     <a href="#projects">View Projects</a>
+                    <a href="Sourav_Poddar_CV.pdf" download>Download CV</a>
                     <a href="https://github.com/Sourav2011" target="_blank">GitHub</a>
                     <a href="https://www.linkedin.com/in/sourav-poddar14/" target="_blank">LinkedIn</a>
                 </div>
@@ -41,74 +44,163 @@
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience" id="experience">
+        <h2>Work Experience</h2>
 
-        <div class="project-grid">
+        <div class="timeline">
 
-            <div class="project-card">
-                <h3>ANOVA – Ants Picnic Project</h3>
-                <p>Statistical analysis of ant attraction using one-way and two-way ANOVA.</p>
-                <a href="https://github.com/Sourav2011/ANOVA-Ants-Picnic-Project" target="_blank">GitHub</a>
+            <div class="timeline-item">
+                <h3>Working Student – Warehouse Assistant</h3>
+                <h4>Picnic Technologies GmbH | Herne, Germany (26/04/2023 – 15/01/2025)</h4>
+                <ul>
+                    <li>Ensured food quality by adhering to German standards.</li>
+                    <li>Supported picking, inventory handling, and warehouse operations.</li>
+                    <li>Collaborated with cross-functional teams to optimize workflows.</li>
+                </ul>
             </div>
 
-            <div class="project-card">
-                <h3>Bayesian Ordinal Regression</h3>
-                <p>Bayesian modeling to analyze how international shipping affects product ratings.</p>
-                <a href="https://github.com/Sourav2011/Bayesian-Ordinal-Regression-International-Shipping" target="_blank">GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Aspirin Effectiveness</h3>
-                <p>Statistical evaluation of aspirin’s effectiveness using epidemiological methods.</p>
-                <a href="https://github.com/Sourav2011/Aspirin-Contingency-Tables-Project" target="_blank">GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h3>World Happiness Report</h3>
-                <p>Descriptive analysis of happiness scores from 2008–2018.</p>
-                <a href="https://github.com/Sourav2011/Descriptive-Analysis-World-Happiness-" target="_blank">GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Car Shipment Management System</h3>
-                <p>Java-based system for managing car shipments.</p>
-                <a href="https://github.com/Sourav2011/Car-Shipment-Management-System" target="_blank">GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Space Shooter Game</h3>
-                <p>C# game with movement and shooting mechanics.</p>
-                <a href="https://github.com/Sourav2011/Space_Shooter" target="_blank">GitHub</a>
+            <div class="timeline-item">
+                <h3>System Support Engineer</h3>
+                <h4>Sky Tracker Ltd | Dhaka, Bangladesh (01/09/2018 – 30/09/2020)</h4>
+                <ul>
+                    <li>Analyzed requirements and supported the design of web applications.</li>
+                    <li>Managed servers, network operations, and technical troubleshooting.</li>
+                    <li>Assisted digital marketing team with promotional content.</li>
+                    <li>Supported operational data needs and recruitment interviews.</li>
+                </ul>
             </div>
 
         </div>
     </section>
 
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card" onclick="openModal('modal1')">
+            <h3>Aspirin & Heart Attack Risk (RCT Analysis)</h3>
+            <p>Risk Ratio, Odds Ratio, CI, NNT, Chi-Square, Fisher’s Exact Test.</p>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal2')">
+            <h3>Ants Picnic Blanket (ANOVA)</h3>
+            <p>One-Way & Two-Way ANOVA, Levene’s Test, Shapiro-Wilk Test.</p>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal3')">
+            <h3>World Happiness Report</h3>
+            <p>Pearson correlations, Gini Index, global well-being trends.</p>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal4')">
+            <h3>Bayesian Ordinal Regression</h3>
+            <p>Shipping delays, costs, customs impact on customer satisfaction.</p>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal5')">
+            <h3>Space Shooter Game</h3>
+            <p>2D graphics game with multi-threaded enemy movement.</p>
+        </div>
+
+    </div>
+</section>
+
     <!-- SKILLS SECTION -->
     <section class="skills" id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>R (ANOVA, Bayesian Modeling, Epidemiology)</li>
-            <li>Python (Pandas, NumPy, Matplotlib)</li>
-            <li>Statistics & Data Analysis</li>
-            <li>C, C++, C#</li>
-            <li>Java</li>
+            <li>Python (ML modules)</li>
+            <li>R (ANOVA, Bayesian Modeling)</li>
+            <li>Power BI / Power Pivot</li>
+            <li>SQL (MySQL, PostgreSQL, Oracle)</li>
+            <li>Data Visualization</li>
+            <li>Machine Learning</li>
+            <li>Linux (Terminal, Bash)</li>
             <li>Git & GitHub</li>
+            <li>Photoshop & Figma</li>
         </ul>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="education" id="education">
+        <h2>Education</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>M.Sc. Data Science</h3>
+                <h4>Technische Universität Dortmund (2022 – Present)</h4>
+            </div>
+
+            <div class="timeline-item">
+                <h3>B.Sc. Computer Science & Engineering</h3>
+                <h4>American International University – Bangladesh (2015 – 2018)</h4>
+            </div>
+
+        </div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:souravpoddar2011@gmail.com">souravpoddar2011@gmail.com</a></p>
+        <p>Phone: +49 01782122383</p>
         <p>GitHub: <a href="https://github.com/Sourav2011" target="_blank">Sourav2011</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/sourav-poddar14/" target="_blank">sourav-poddar14</a></p>
     </section>
 
     <!-- BACK TO TOP BUTTON -->
     <button id="backToTop">↑</button>
+
+<!-- MODALS -->
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Aspirin & Heart Attack Risk (RCT Analysis)</h2>
+        <p>Risk Ratio, Odds Ratio, Confidence Intervals, NNT, Chi-Square, Fisher’s Exact Test.</p>
+        <a href="https://github.com/Sourav2011/Aspirin-Contingency-Tables-Project" target="_blank">View GitHub</a>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Ants Picnic Blanket (ANOVA)</h2>
+        <p>One-Way & Two-Way ANOVA, Levene’s Test, Shapiro-Wilk Test.</p>
+        <a href="https://github.com/Sourav2011/ANOVA-Ants-Picnic-Project" target="_blank">View GitHub</a>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>World Happiness Report</h2>
+        <p>Pearson correlations, Gini Index, global well-being trends.</p>
+        <a href="https://github.com/Sourav2011/Descriptive-Analysis-World-Happiness-" target="_blank">View GitHub</a>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Bayesian Ordinal Regression</h2>
+        <p>Shipping delays, costs, customs impact on customer satisfaction.</p>
+        <a href="https://github.com/Sourav2011/Applied-Bayesian-Data-Analysis-Project" target="_blank">View GitHub</a>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <h2>Space Shooter Game</h2>
+        <p>2D graphics game with multi-threaded enemy movement.</p>
+        <a href="https://github.com/Sourav2011/Space_Shooter" target="_blank">View GitHub</a>
+    </div>
+</div>
 
     <script src="script.js"></script>
 </body>
