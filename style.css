@@ -363,19 +363,27 @@ section h2 {
     opacity: 1;
     transform: translateY(0);
 }
-/* CONTACT TEXT FIX — MAKE IT WHITE */
-.contact p {
-    color: #ffffff;
-    font-size: 18px;
+
+/* FIX HERO IMAGE POSITION */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
 }
 
-.contact a {
-    color: #ffffff;
-    font-weight: bold;
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #9b4dff;
+    box-shadow: 0 0 25px #9b4dff;
 }
 
-.contact a:hover {
-    color: #e6e6e6;
-    text-decoration: underline;
+/* Add spacing so About Me doesn't touch the image */
+.about {
+    margin-top: 80px;
 }
 
