@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sourav Poddar | Data Science Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Skill icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -14,16 +16,18 @@
         <h3 class="logo">Sourav Poddar</h3>
         <ul>
             <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="themeToggle">🌙</button>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero" id="hero">
+    <section class="hero fade-in" id="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Sourav Poddar</h1>
@@ -44,8 +48,22 @@
         </div>
     </section>
 
+    <!-- ABOUT SECTION -->
+    <section class="about fade-in" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Motivated Data Science master's student with hands-on experience in data analysis,
+                statistical modeling, system support, and operational processes. Skilled in Python, R,
+                Power BI, SQL, and modern machine-learning techniques. Strong analytical mindset,
+                structured working style, and excellent teamwork abilities. Seeking opportunities in
+                Data Science, Analytics, or Business Intelligence.
+            </p>
+        </div>
+    </section>
+
     <!-- EXPERIENCE SECTION -->
-    <section class="experience" id="experience">
+    <section class="experience fade-in" id="experience">
         <h2>Work Experience</h2>
 
         <div class="timeline">
@@ -75,57 +93,84 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="projects" id="projects">
-    <h2>Projects</h2>
+    <section class="projects fade-in" id="projects">
+        <h2>Projects</h2>
 
-    <div class="project-grid">
+        <div class="project-grid">
 
-        <div class="project-card" onclick="openModal('modal1')">
-            <h3>Aspirin & Heart Attack Risk (RCT Analysis)</h3>
-            <p>Risk Ratio, Odds Ratio, CI, NNT, Chi-Square, Fisher’s Exact Test.</p>
+            <div class="project-card" onclick="openModal('modal1')">
+                <h3>Aspirin & Heart Attack Risk (RCT Analysis)</h3>
+                <p>Risk Ratio, Odds Ratio, CI, NNT, Chi-Square, Fisher’s Exact Test.</p>
+            </div>
+
+            <div class="project-card" onclick="openModal('modal2')">
+                <h3>Ants Picnic Blanket (ANOVA)</h3>
+                <p>One-Way & Two-Way ANOVA, Levene’s Test, Shapiro-Wilk Test.</p>
+            </div>
+
+            <div class="project-card" onclick="openModal('modal3')">
+                <h3>World Happiness Report</h3>
+                <p>Pearson correlations, Gini Index, global well-being trends.</p>
+            </div>
+
+            <div class="project-card" onclick="openModal('modal4')">
+                <h3>Bayesian Ordinal Regression</h3>
+                <p>Shipping delays, costs, customs impact on customer satisfaction.</p>
+            </div>
+
+            <div class="project-card" onclick="openModal('modal5')">
+                <h3>Space Shooter Game</h3>
+                <p>2D graphics game with multi-threaded enemy movement.</p>
+            </div>
+
         </div>
-
-        <div class="project-card" onclick="openModal('modal2')">
-            <h3>Ants Picnic Blanket (ANOVA)</h3>
-            <p>One-Way & Two-Way ANOVA, Levene’s Test, Shapiro-Wilk Test.</p>
-        </div>
-
-        <div class="project-card" onclick="openModal('modal3')">
-            <h3>World Happiness Report</h3>
-            <p>Pearson correlations, Gini Index, global well-being trends.</p>
-        </div>
-
-        <div class="project-card" onclick="openModal('modal4')">
-            <h3>Bayesian Ordinal Regression</h3>
-            <p>Shipping delays, costs, customs impact on customer satisfaction.</p>
-        </div>
-
-        <div class="project-card" onclick="openModal('modal5')">
-            <h3>Space Shooter Game</h3>
-            <p>2D graphics game with multi-threaded enemy movement.</p>
-        </div>
-
-    </div>
-</section>
+    </section>
 
     <!-- SKILLS SECTION -->
-    <section class="skills" id="skills">
+    <section class="skills fade-in" id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Python (ML modules)</li>
-            <li>R (ANOVA, Bayesian Modeling)</li>
-            <li>Power BI / Power Pivot</li>
-            <li>SQL (MySQL, PostgreSQL, Oracle)</li>
-            <li>Data Visualization</li>
-            <li>Machine Learning</li>
-            <li>Linux (Terminal, Bash)</li>
-            <li>Git & GitHub</li>
-            <li>Photoshop & Figma</li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fa-brands fa-python"></i>
+                <span>Python (ML modules)</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>R (ANOVA, Bayesian Modeling)</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Power BI / Power Pivot</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-database"></i>
+                <span>SQL (MySQL, PostgreSQL, Oracle)</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>Data Visualization</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-robot"></i>
+                <span>Machine Learning</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-linux"></i>
+                <span>Linux (Terminal, Bash)</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git & GitHub</span>
+            </div>
+            <div class="skill-item">
+                <i class="fa-solid fa-pen-nib"></i>
+                <span>Photoshop & Figma</span>
+            </div>
+        </div>
     </section>
 
     <!-- EDUCATION SECTION -->
-    <section class="education" id="education">
+    <section class="education fade-in" id="education">
         <h2>Education</h2>
 
         <div class="timeline">
@@ -144,63 +189,87 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
+    <section class="contact fade-in" id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:souravpoddar2011@gmail.com">souravpoddar2011@gmail.com</a></p>
-        <p>Phone: +49 01782122383</p>
-        <p>GitHub: <a href="https://github.com/Sourav2011" target="_blank">Sourav2011</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sourav-poddar14/" target="_blank">sourav-poddar14</a></p>
+        <p>You can reach me via email or the form below.</p>
+
+        <form class="contact-form" action="mailto:souravpoddar2011@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message</button>
+        </form>
+
+        <p>Or email directly: <a href="mailto:souravpoddar2011@gmail.com">souravpoddar2011@gmail.com</a></p>
     </section>
 
     <!-- BACK TO TOP BUTTON -->
     <button id="backToTop">↑</button>
 
-<!-- MODALS -->
-
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal1')">&times;</span>
-        <h2>Aspirin & Heart Attack Risk (RCT Analysis)</h2>
-        <p>Risk Ratio, Odds Ratio, Confidence Intervals, NNT, Chi-Square, Fisher’s Exact Test.</p>
-        <a href="https://github.com/Sourav2011/Aspirin-Contingency-Tables-Project" target="_blank">View GitHub</a>
+    <!-- MODALS -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Aspirin & Heart Attack Risk (RCT Analysis)</h2>
+            <p>Risk Ratio, Odds Ratio, Confidence Intervals, NNT, Chi-Square, Fisher’s Exact Test.</p>
+            <a href="https://github.com/Sourav2011/Aspirin-Contingency-Tables-Project" target="_blank">View GitHub</a>
+        </div>
     </div>
-</div>
 
-<div id="modal2" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal2')">&times;</span>
-        <h2>Ants Picnic Blanket (ANOVA)</h2>
-        <p>One-Way & Two-Way ANOVA, Levene’s Test, Shapiro-Wilk Test.</p>
-        <a href="https://github.com/Sourav2011/ANOVA-Ants-Picnic-Project" target="_blank">View GitHub</a>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Ants Picnic Blanket (ANOVA)</h2>
+            <p>One-Way & Two-Way ANOVA, Levene’s Test, Shapiro-Wilk Test.</p>
+            <a href="https://github.com/Sourav2011/ANOVA-Ants-Picnic-Project" target="_blank">View GitHub</a>
+        </div>
     </div>
-</div>
 
-<div id="modal3" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal3')">&times;</span>
-        <h2>World Happiness Report</h2>
-        <p>Pearson correlations, Gini Index, global well-being trends.</p>
-        <a href="https://github.com/Sourav2011/Descriptive-Analysis-World-Happiness-" target="_blank">View GitHub</a>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>World Happiness Report</h2>
+            <p>Pearson correlations, Gini Index, global well-being trends.</p>
+            <a href="https://github.com/Sourav2011/Descriptive-Analysis-World-Happiness-" target="_blank">View GitHub</a>
+        </div>
     </div>
-</div>
 
-<div id="modal4" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal4')">&times;</span>
-        <h2>Bayesian Ordinal Regression</h2>
-        <p>Shipping delays, costs, customs impact on customer satisfaction.</p>
-        <a href="https://github.com/Sourav2011/Applied-Bayesian-Data-Analysis-Project" target="_blank">View GitHub</a>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Bayesian Ordinal Regression</h2>
+            <p>Shipping delays, costs, customs impact on customer satisfaction.</p>
+            <a href="https://github.com/Sourav2011/Applied-Bayesian-Data-Analysis-Project" target="_blank">View GitHub</a>
+        </div>
     </div>
-</div>
 
-<div id="modal5" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal5')">&times;</span>
-        <h2>Space Shooter Game</h2>
-        <p>2D graphics game with multi-threaded enemy movement.</p>
-        <a href="https://github.com/Sourav2011/Space_Shooter" target="_blank">View GitHub</a>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Space Shooter Game</h2>
+            <p>2D graphics game with multi-threaded enemy movement.</p>
+            <a href="https://github.com/Sourav2011/Space_Shooter" target="_blank">View GitHub</a>
+        </div>
     </div>
-</div>
+
+    <!-- FOOTER -->
+    <footer class="footer fade-in">
+        <p>© 2026 Sourav Poddar — Data Science Portfolio</p>
+        <p>
+            <a href="mailto:souravpoddar2011@gmail.com">Email</a> ·
+            <a href="https://github.com/Sourav2011" target="_blank">GitHub</a> ·
+            <a href="https://www.linkedin.com/in/sourav-poddar14/" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
